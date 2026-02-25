@@ -2,18 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { render, Box, Text, useInput, useApp } from 'ink';
 import Spinner from 'ink-spinner';
 import { spawn } from 'child_process';
+import fs from 'fs';
+import path from 'path';
 
-const ASCII_ART = `
-   __  __  ____ ____    ____   _____              _             _ 
-  |  \\/  |/ ___|  _ \\  / ___| |_   _|__ _ __ _ __(_)_ __   __ _| |
-  | |\\/| | |   | |_/ | \\___ \\   | |/ _ \\ '__| '_ \\ | '_ \\ / _\` | |
-  | |  | | |___|  __/   ___) |  | |  __/ |  | | | | | | | | (_| | |
-  |_|  |_|\\____|_|     |____/   |_|\\___|_|  |_| |_|_|_| |_|\\__,_|_|
-`;
+// Load ASCII ART safely from file
+const asciiArtPath = path.join(process.cwd(), 'assets', 'ascii_art.txt');
+const ASCII_ART = fs.existsSync(asciiArtPath) ? fs.readFileSync(asciiArtPath, 'utf8') : '';
 
 const Badge = ({ label, value, status }) => {
     const color = status === 'ready' ? 'green' : status === 'error' ? 'red' : 'yellow';
-    const statusIcon = status === 'ready' ? '🟢' : status === 'error' ? '🔴' : '🟡';
+    const statusIcon = status === 'ready' ? 'ðŸŸ¢' : status === 'error' ? 'ðŸ”´' : 'ðŸŸ¡';
 
     return (
         <Box borderStyle="single" borderColor="gray" paddingX={1} marginX={1}>
@@ -35,9 +33,8 @@ const Dashboard = () => {
     });
     const [logs, setLogs] = useState([]);
     const [progress, setProgress] = useState({ servers: 0, tools: 0 });
-    const serversTotal = 2; // Hardcoded context
+    const serversTotal = 2;
 
-    // Keyboard logic
     useInput((input, key) => {
         if (input === 'q') exit();
         if (input === 'l') setView('logs');
@@ -45,7 +42,6 @@ const Dashboard = () => {
     });
 
     useEffect(() => {
-        // En Windows, ejecutar el .cmd requiere spawn
         const proxy = spawn('mcp-superassistant-proxy.cmd', [
             '--host', '127.0.0.1',
             '--port', '4003',
@@ -55,15 +51,13 @@ const Dashboard = () => {
         ], { shell: true });
 
         const handleLine = (data) => {
-            const rawLines = data.toString().split('\n');
+            const rawLines = data.toString().split('\\n');
             rawLines.forEach(line => {
                 const trimmed = line.trim();
                 if (!trimmed) return;
 
-                // Update Logs
                 setLogs((prev) => [...prev.slice(-100), trimmed]);
 
-                // Real-time parsing logic
                 if (trimmed.includes('Connected to server:')) {
                     const serverMatch = trimmed.split('Connected to server:')[1]?.trim();
                     if (serverMatch) {
@@ -81,7 +75,7 @@ const Dashboard = () => {
                 }
 
                 if (trimmed.includes('has') && trimmed.includes('tools')) {
-                    const match = trimmed.match(/Server (.*) has (\d+) tools/);
+                    const match = trimmed.match(/Server (.*) has (\\d+) tools/);
                     if (match) {
                         const sName = match[1].trim();
                         const tCount = parseInt(match[2]);
