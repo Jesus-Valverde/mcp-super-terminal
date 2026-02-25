@@ -1,0 +1,40 @@
+Warning: React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `Dashboard`.
+    at Dashboard (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\src\mcp_terminal.js:56:17)
+    at App (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\App.js:42:9)
+Warning: Encountered two children with the same key, `    at Module._compile (node:internal/modules/cjs/loader:1761:14)`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ErrorOverview (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\ErrorOverview.js:35:26)
+    at App (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\App.js:42:9)
+Warning: Encountered two children with the same key, `    at Module.load (node:internal/modules/cjs/loader:1481:32)`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ErrorOverview (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\ErrorOverview.js:35:26)
+    at App (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\App.js:42:9)
+Warning: Encountered two children with the same key, `    at Module._load (node:internal/modules/cjs/loader:1300:12)`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ErrorOverview (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\ErrorOverview.js:35:26)
+    at App (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\App.js:42:9)
+Warning: Encountered two children with the same key, `    at TracingChannel.traceSync (node:diagnostics_channel:328:14)`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ErrorOverview (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\ErrorOverview.js:35:26)
+    at App (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\App.js:42:9)
+Warning: Encountered two children with the same key, `    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ink-box
+    at C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\Box.js:39:11
+    at ErrorOverview (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\ErrorOverview.js:35:26)
+    at App (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\components\App.js:42:9)

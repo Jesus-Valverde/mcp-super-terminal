@@ -1,0 +1,80 @@
+
+[2K[1A[2K[G
+[2K[1A[2K[G
+[2K[1A[2K[G
+[2K[1A[2K[G
+[2K[1A[2K[G
+[2K[1A[2K[G
+  ERROR Element type is invalid: expected a string (for built-in components) or
+        a class/function (for composite components) but got: object.
+
+       Check the render method of `Dashboard`.
+
+ -
+ - Check the render method of `Dashboard`.
+ -createFiberFromTypeA (node_modules/react-reconciler/cjs/react-reconciler.deve
+  dProps              lopment.js:17777:21)
+ -createFiberFromEl (node_modules/react-reconciler/cjs/react-reconciler.develop
+  ment             ment.js:17805:15)
+ -createChil (node_modules/react-reconciler/cjs/react-reconciler.development.js
+            :4827:28)
+ -reconcileChildren (node_modules/react-reconciler/cjs/react-reconciler.develop
+  rray             ment.js:5100:25)
+ -reconcileChildFi (node_modules/react-reconciler/cjs/react-reconciler.developm
+  ers             ent.js:5506:14)
+ -reconcileChild (node_modules/react-reconciler/cjs/react-reconciler.developmen
+  en            t.js:8417:28)
+ -updateHostCompon (node_modules/react-reconciler/cjs/react-reconciler.developm
+  nt              ent.js:9059:3)
+ -beginWor (node_modules/react-reconciler/cjs/react-reconciler.development.js:1
+          0507:14)
+ -Object.invokeGuardedCa (node_modules/react-reconciler/cjs/react-reconciler.de
+  lbackProd             velopment.js:12101:10)
+ -invokeGuardedCal (node_modules/react-reconciler/cjs/react-reconciler.developm
+  back            ent.js:12292:31)
+ -beginWork$ (node_modules/react-reconciler/cjs/react-reconciler.development.js
+            :16531:7)
+ -performUnitOfW (node_modules/react-reconciler/cjs/react-reconciler.developmen
+  rk            t.js:15340:12)
+ -workLoopSyn (node_modules/react-reconciler/cjs/react-reconciler.development.j
+             s:15268:5)
+ -renderRootSy (node_modules/react-reconciler/cjs/react-reconciler.development.
+  c           js:15231:7)
+ -performSyncWorkO (node_modules/react-reconciler/cjs/react-reconciler.developm
+  Root            ent.js:14821:18)
+ -  (node_modules/react-reconciler/cjs/react-reconciler.development.js:2546:26)
+ -unstable_runWithPriori (node_modules/scheduler/cjs/scheduler.development.js:4
+  y                     68:12)
+ -runWithPriori (node_modules/react-reconciler/cjs/react-reconciler.development
+  y            .js:2495:10)
+ -flushSyncCallbackQue (node_modules/react-reconciler/cjs/react-reconciler.deve
+  eImpl               lopment.js:2541:9)
+ -flushSyncCallback (node_modules/react-reconciler/cjs/react-reconciler.develop
+  ueue             ment.js:2528:3)
+ -scheduleUpdateOnF (node_modules/react-reconciler/cjs/react-reconciler.develop
+  ber              ment.js:14421:9)
+ -Object.updateCont (node_modules/react-reconciler/cjs/react-reconciler.develop
+  iner             ment.js:18229:3)
+ - Ink.render (node_modules/ink/src/ink.tsx:189:14)
+ - render (node_modules/ink/src/render.ts:90:11)
+ - Object.<anonymous> (src//mcp_terminal.js:178:1)
+ - Module._compile (node:internal/modules/cjs/loader:1761:14)
+ - Module._compile (node_modules/pirates/lib/index.js:129:24)
+ -  (node:internal/modules/cjs/loader:1893:10)
+ - Object.newLoader (node_modules/pirates/lib/index.js:134:7)
+ - Module.load (node:internal/modules/cjs/loader:1481:32)
+ - Module._load (node:internal/modules/cjs/loader:1300:12)
+ - TracingChannel.traceSync (node:diagnostics_channel:328:14)
+ - wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+ - Module.require (node:internal/modules/cjs/loader:1504:12)
+ - require (node:internal/modules/helpers:152:16)
+ - Object.<anonymous> (index.js:4:1)
+ - Module._compile (node:internal/modules/cjs/loader:1761:14)
+ - Object.<anonymous> (node:internal/modules/cjs/loader:1893:10)
+ - Module.load (node:internal/modules/cjs/loader:1481:32)
+ - Module._load (node:internal/modules/cjs/loader:1300:12)
+ - TracingChannel.traceSync (node:diagnostics_channel:328:14)
+ - wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+ - Module.executeUserEntryPoint (node:internal/modules/run_main:154:5)
+ -  (node:internal/main/run_main_module:33:47)
+
