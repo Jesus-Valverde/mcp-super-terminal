@@ -1,0 +1,44 @@
+node:internal/modules/esm/module_job:510
+      throw new ERR_REQUIRE_ASYNC_MODULE(filename, parentFilename);
+      ^
+
+Error: require() cannot be used on an ESM graph with top-level await. Use import() instead. To see where the top-level await comes from, use --experimental-print-required-tla.
+  From C:\Users\jesus\Documents\Proyects\MCP Super Terminal\src\mcp_terminal.js 
+  Requiring C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\ink\build\index.js 
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:510:13)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:425:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1578:24)
+    at Module._compile (node:internal/modules/cjs/loader:1743:5)
+    at Module._compile (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\pirates\lib\index.js:129:24)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.newLoader [as .js] (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\pirates\lib\index.js:134:7)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\src\/mcp_terminal.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\pirates\lib\index.js:129:24)
+    at node:internal/modules/cjs/loader:1893:10
+    at Object.newLoader [as .js] (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\node_modules\pirates\lib\index.js:134:7)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\jesus\Documents\Proyects\MCP Super Terminal\index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'ERR_REQUIRE_ASYNC_MODULE'
+}
+
+Node.js v24.11.1
