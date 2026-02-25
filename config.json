@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "node",
+      "args": [
+        "C:/Users/jesus/AppData/Local/npm-cache/_npx/a3241bba59c344f5/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
+        "C:/Users/jesus/Desktop"
+      ]
+    }
+  }
+}
